@@ -1,0 +1,99 @@
+@media only screen and (max-width: 991.98px) {
+  .dashboard {
+    .row.flex-nowrap.w-100 {
+      margin: 0 !important;
+    }
+  }
+  .login {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .index_cards {
+    margin-inline-start: 0;
+    .home {
+      .targets {
+        .target_card {
+          width: 100%;
+          margin-inline-end: 0;
+          margin-bottom: 2.5rem;
+          &:nth-child(even) {
+            margin-inline-end: 0;
+            position: unset;
+            top: unset;
+          }
+        }
+      }
+    }
+    .top_messages {
+      p {
+        width: 80%;
+      }
+      .message_card {
+        width: 100%;
+      }
+    }
+    .card_current_questions {
+      .description {
+        .text {
+          width: 80%;
+        }
+      }
+      .answer_btn {
+        padding: 0.75rem 2rem;
+        width: 40%;
+      }
+    }
+    .add_questions {
+      form {
+        width: 100%;
+      }
+    }
+    .question {
+      .details_question {
+        .card_Message_Details {
+          .details {
+            .required_time, .line, .remaining_time {
+              margin-inline-end: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .library {
+      .ps-4 {
+        padding-inline-start: .75rem !important;
+        padding-inline-end: .75rem !important;
+        margin-top: 1.5rem;
+      }
+    }
+    .setting {
+      .personal_data {
+        p {
+          width: 50%;
+        }
+        form {
+          width: 100%;
+        }
+      }
+    }
+    .team_details .side_answer {
+      margin-top: 2rem;
+    }
+    .teams, .entry, .questionnaires {
+      padding: 2rem;
+      .filter {
+        width: 100% !important;
+      }
+    }
+    .add_answer {
+      form {
+        .form-group {
+          .video-js {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,710 @@
+$PrimaryColor: #183041;
+$SecondColor: #942714;
+$PrimaryText: #011C1E;
+$SecondText: #919191;
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+
+@media only screen and (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  &:lang(en) {
+    direction: ltr;
+  }
+}
+body {
+  &:lang(ar) {
+    direction: rtl;
+    .navbar .serach_navbar .search_navbar .btn {
+      left: 0.7rem;
+      right: unset !important;
+    }
+    .index_cards .setting .personal_data form .form-group svg {
+      left: 1rem;
+      right: unset !important;
+    }
+    .index_cards .add_team .form-group svg {
+      right: 0.7rem;
+      left: unset !important;
+    }
+    .form-group select {
+      background-position-x: 0 !important;
+    }
+    .questionnaires .questionnaires_card .link svg {
+      transform: rotate(180deg);
+    }
+    .sidebar .problem a svg{
+      transform: rotate(180deg);
+    }
+    .modal-header .btn-close {
+      margin-inline-start: auto;
+      margin-inline-end: 0;
+    }
+    .multiselect__tags {
+      text-align: start;
+    }
+    .multiselect__select {
+      left: 0;
+      right: unset;
+    }
+    .setting .personal_data form .file-upload-form {
+      right: 3%;
+      left: unset;
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #fff !important;
+}
+.multiselect__select::before {
+  top: 1.4rem;
+  border-color: #fff transparent transparent transparent;
+}
+.multiselect__option {
+  text-align: start;
+  font-family: "regular";
+}
+.pagination {
+  .page-item {
+    .page-link {
+      background-color: transparent;
+      border-color: #0e0f0f;
+      border-width: 1px;
+      color: $SecondText;
+      font-size: 1.1rem;
+      padding: 0.75rem 1.5rem;
+    }
+    &.active {
+      .page-link {
+        background-color: $PrimaryColor;
+        color: #fff;
+      }
+    }
+  }
+  .active > .page-link,
+  .page-link.active,
+  .page-link:focus {
+    box-shadow: unset;
+    border-color: unset;
+  }
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+}
+.not_found {
+  font-family: "semibold";
+  color: #fff;
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+.btn:focus,
+.form-check-input:focus,
+.form-check :focus,
+.btn-check:focus + .btn,
+.btn-close:focus,
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.multiselect__option--highlight {
+  background-color: #0d6efd !important;
+}
+.multiselect__tag {
+  background-color: $PrimaryText !important;
+  .multiselect__tag-icon::after {
+    color: #fff !important;
+  }
+}
+.dataTables_filter,
+.dataTables_length {
+  label {
+    color: #fff;
+    font-family: "regular";
+  }
+}
+.dataTables_wrapper {
+  .dataTables_filter {
+    input {
+      margin: 0 0.5rem !important;
+    }
+  }
+  .dataTables_length {
+    select {
+      padding: 0.25rem 0.75rem !important;
+      margin: 0 0.5rem !important;
+    }
+  }
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #fff !important;
+  font-family: "regular";
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  color: #fff !important;
+}
+.btn.show {
+  border-color: transparent !important;
+}
+.swal2-title {
+  font-family: "semibold";
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: $PrimaryColor !important;
+}
+.view_all {
+  color: $SecondText;
+  font-family: "regular";
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000008c;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.title_section {
+  font-family: "bold";
+  color: $PrimaryColor;
+  margin-bottom: 0;
+}
+
+.PrimaryButton {
+  background-color: $SecondColor;
+  color: #fff;
+  font-size: .8rem;
+  padding: .75rem 3rem;
+  font-family: "semibold";
+  transition: .7s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    color: $SecondColor;
+    border: 1px solid $SecondColor;
+    transition: .7s ease-in-out;
+  }
+}
+.SecondButton {
+  background-color: transparent;
+  color: $SecondColor;
+  border: 1px solid $SecondColor;
+  font-size: .8rem;
+  padding: .75rem 3rem;
+  font-family: "semibold";
+  transition: .7s ease-in-out;
+  &:hover {
+    background-color: $SecondColor;
+    color: #fff;
+    transition: .7s ease-in-out;
+  }
+}
+
+.BlueButton {
+  background-color: $PrimaryColor;
+  color: #fff;
+  font-size: .8rem;
+  padding: .75rem 3rem;
+  font-family: "semibold";
+  transition: .7s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
+    transition: .7s ease-in-out;
+  }
+}
+
+.filter_table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .form-group {
+    width: 85%;
+    position: relative;
+    .form-control {
+      font-family: "regular";
+      font-size: .9rem;
+      padding: .75rem;
+      padding-inline-start: 2rem;
+      border-color: transparent !important;
+      &:focus {
+        border-color: transparent !important;
+      }
+      &::placeholder {
+        color: #a1a1a1;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 1rem;
+      right: .5rem;
+    }
+  }
+  .bootstrap-select {
+    width: 15% !important;
+    margin-inline-start: .75rem;
+    .dropdown-toggle {
+      background-color: transparent;
+      padding: .8rem;
+      &:hover {
+        border-color: transparent !important;
+      }
+    }
+    .dropdown-menu {
+      li {
+        a {
+          text-align: start;
+          font-family: "regular";
+          font-size: .9rem;
+          color: #000;
+        }
+      }
+    }
+    .filter-option-inner-inner {
+      text-align: start;
+      font-family: "regular";
+      font-size: .8rem;
+      color: #a1a1a1;
+    }
+  }
+}
+
+table {
+  thead {
+    background-color: $PrimaryColor;
+    color: #fff;
+    tr {
+      font-family: "semibold";
+      th {
+        padding: .75rem .5rem !important;
+        padding-inline-start: 2rem !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      font-family: "regular";
+      color: $PrimaryText;
+      vertical-align: middle;
+      &:nth-child(odd) {
+        background-color: rgba(24, 48, 65, .1);
+      }
+      &:nth-child(even) {
+        background-color: #fff;
+      }
+      .dropdown {
+        .dropdown-toggle {
+          &:hover {
+            border-color: transparent;
+          }
+          &::after {
+            content: unset;
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            text-align: start;
+          }
+        }
+      }
+      th {
+        padding: 1rem .5rem !important;
+        padding-inline-start: 2rem !important;
+      }
+      td {
+        padding: 1rem .5rem !important;
+        padding-inline-start: 2rem !important;
+        &:last-child {
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+.index_cards {
+  background-color: $PrimaryColor;
+  margin-inline-start: 2rem;
+  .content {
+    margin-top: 5rem;
+    .table_data {
+      background-color: #F8F8FA;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+    }
+    .add_item {
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      margin: 1.5rem 0;
+      padding: 2rem;
+      .form-group {
+        margin-bottom: 1.5rem;
+        width: 55%;
+        label {
+          font-family: "semibold";
+          color: $PrimaryColor;
+          margin-bottom: .8rem;
+        }
+        .form-control {
+          background-color: #F5F8FA;
+          color: #A1A1A1;
+          border-color: transparent;
+          font-family: "regular";
+          font-size: .9rem;
+          padding: 1rem;
+          resize: none;
+          &:focus {
+            border-color: transparent !important;
+          }
+          &::placeholder {
+            color: #a1a1a1;
+          }
+        }
+        .bootstrap-select {
+          padding: 0;
+          .dropdown-toggle {
+            background-color: transparent;
+            padding: 1rem;
+            &:hover {
+              border-color: transparent !important;
+            }
+          }
+          .dropdown-menu {
+            li {
+              a {
+                text-align: start;
+                font-family: "regular";
+                font-size: .9rem;
+              }
+            }
+          }
+          .filter-option-inner-inner {
+            text-align: start;
+            font-family: "regular";
+            font-size: .8rem;
+            color: #a1a1a1;
+          }
+        }
+      }
+      .upload_file {
+        .upload_file_label {
+          background-color: #F5F8FA;
+          border: 1px dashed #D1D3D6;
+          width: 100%;
+          text-align: center;
+          padding: 1.5rem;
+          border-radius: 8px;
+          cursor: pointer;
+          svg {
+            color: $SecondColor;
+            font-size: 3.5rem;
+          }
+          p {
+            font-family: "medium";
+            color: #5F666F;
+            margin: 1.5rem 0 .5rem !important;
+          }
+          span {
+            font-family: "regular";
+            color: #5F666F;
+          }
+        }
+      }
+      .client_type {
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+        width: 48.5%;
+        display: inline-block;
+        margin-bottom: 0;
+        label {
+          background-color: #F5F8FA;
+          color: #A1A1A1;
+          margin-bottom: 0;
+          padding: 1rem;
+          width: 100%;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+        
+        input[type="radio"]:checked+label {
+          background-color: $PrimaryColor;
+          color: #fff;
+        }
+      }
+      .content_course {
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+        width: 100%;
+        display: inline-block;
+        label {
+          background-color: #F5F8FA;
+          color: #535353;
+          margin-bottom: 0;
+          padding: 1rem;
+          width: 100%;
+          cursor: pointer;
+          border-radius: 8px;
+          svg {
+            color: #535353;
+            font-size: 1.2rem;
+            margin-inline-end: .5rem;
+          }
+        }
+        
+        input[type="radio"]:checked+label {
+          background-color: rgba($color: $SecondColor, $alpha: .07);
+          border: 1px solid $SecondColor;
+          color: #2E0C06;
+          svg {
+            color: $SecondColor;
+          }
+        }
+      }
+      .PrimaryButton {
+        font-size: 1rem;
+        padding: .75rem 7rem;
+      }
+      .date_subscribe {
+        width: 48%;
+        display: inline-block;
+        margin-inline-end: 3%;
+        &:last-child {
+          margin-inline-end: 0;
+        }
+      }
+    }
+    .teachers {
+      margin-top: 2rem;
+      border-radius: 5px;
+      padding: 2rem;
+      border: 1px solid #D6D6D6;
+      .filter_table {
+        .form-group {
+          .form-control {
+            background-color: rgba(143, 146, 161, .05);
+          }
+        }
+        .bootstrap-select {
+          .dropdown-toggle {
+            background-color: rgba(143, 146, 161, .05);
+          }
+        }
+      }
+      .card_teacher {
+        border-radius: 5px;
+        border: 1px solid #D4D4D4;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        img {
+          width: 100%;
+          height: 200px;
+          border-radius: 5px;
+        }
+        .data_teacher {
+          padding: 1.5rem 1.5rem .8rem 1.5rem;
+          .name {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin: 0 0 .3rem !important;
+          }
+          .job {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .9rem;
+          }
+          ul {
+            list-style: none;
+            li {
+              margin-top: .7rem;
+              svg {
+                color: $SecondText;
+                margin-inline-end: .5rem;
+              }
+              span {
+                font-family: "regular";
+                font-size: .9rem;
+                color: $SecondText;
+              }
+            }
+          }
+        }
+      }
+    }
+    .subjects {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        .subject {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #F7F7F7;
+          font-family: "regular";
+          color: #5F666F;
+          padding: .5rem 1rem;
+          border-radius: 32px;
+          width: 20%;
+          margin-inline-end: 5%;
+          margin-bottom: 1.5rem;
+          &:nth-child(4n) {
+            margin-inline-end: 0;
+          }
+          .name {
+            margin-bottom: 0;
+            svg {
+              margin-inline-end: .5rem;
+            }
+          }
+          .delete {
+            color: $SecondColor;
+          }
+        }
+      }
+    }
+    .duration {
+      display: flex;
+      flex-wrap: wrap;
+      .form-check {
+        width: 25%;
+        .form-check-input {
+          float: right;
+          margin-right: unset;
+          margin-inline-start: 0em;
+        }
+        .form-check-label {
+          padding-inline-start: 1.5rem;
+          color: #A1A1A1;
+          font-family: "regular";
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  background-color: #FAFAFA;
+  .login_card {
+    width: 55%;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    .title {
+      color: $PrimaryText;
+      text-align: center;
+      font-family: "bold";
+    }
+    .text {
+      text-align: center;
+      color: $PrimaryText;
+      font-family: "regular";
+      text-align: center;
+      display: block;
+      margin-bottom: 3rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+      label {
+        margin-bottom: 0.7rem;
+        font-family: "semibold";
+        color: #fff;
+      }
+      input {
+        background-color: transparent;
+        color: $SecondText;
+        border-radius: 5px;
+        padding: 1rem;
+        font-size: 0.8rem;
+        font-family: "regular";
+      }
+    }
+    .forget_password {
+      display: block;
+      color: $PrimaryText;
+      margin-inline-start: auto;
+      width: fit-content;
+      font-family: "semibold";
+    }
+    .btn {
+      width: 100%;
+      background-color: $SecondColor;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.8rem;
+      margin-top: 1.5rem;
+      font-family: "semibold";
+      transition: 0.7s ease-in-out;
+      &:hover {
+        border: 1px solid $PrimaryText;
+        color: $PrimaryText;
+        background-color: transparent;
+        transition: 0.7s ease-in-out;
+      }
+    }
+  }
+}
+
+@import "./_layout.scss";
+@import "./_responsive.scss";
