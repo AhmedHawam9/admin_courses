@@ -524,6 +524,31 @@ table {
           margin-inline-end: 0;
         }
       }
+      .package  {
+        .form-group {
+          .form-check {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            .form-check-label {
+              margin-bottom: 0;
+              font-size: .8rem;
+              color: $SecondText;
+              margin-inline-start: .8rem;
+            }
+            .form-check-input {
+              float: right;
+              margin-left: unset;
+              margin-top: 0;
+              transform: scale(1.2);
+              &:focus {
+                border-color: #86b7fe;
+                box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+              }
+            }
+          }
+        }
+      }
     }
     .teachers {
       margin-top: 2rem;
@@ -624,10 +649,11 @@ table {
         .form-check-input {
           float: right;
           margin-right: unset;
-          margin-inline-start: 0em;
+          margin-left: unset;
+          margin-inline-start: 0.5rem;
         }
         .form-check-label {
-          padding-inline-start: 1.5rem;
+          padding-inline-start: 0.5rem;
           color: #A1A1A1;
           font-family: "regular";
           font-size: .9rem;

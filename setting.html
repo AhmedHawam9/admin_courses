@@ -187,89 +187,165 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <h4 class="title_section">اضافة اشتراك</h4>
+            <h4 class="title_section">إصدارات التطبيق</h4>
             <form action="index.html" class="add_item">
-              <div class="form-group">
-                <label for="" class="d-block">نوع الاشتراك</label>
-                <div class="form-group client_type">
-                    <input type="radio" name="client_type" id="Student" value="1" checked required hidden>
-                    <label for="Student">طالب</label>
-                </div>
-                <div class="form-group client_type me-3">
-                  <input type="radio" name="client_type" id="package" value="2" required hidden>
-                  <label for="package">باكدج</label>
-                </div>
-              </div>
               <div class="package">
                 <div class="form-group">
-                  <label for="">مدة الدفع</label>
+                  <label for="">حالة التطبيق</label>
                   <div class="duration">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="durationSubcribe" id="Monthly">
-                      <label class="form-check-label" for="Monthly">
-                        شهري
+                      <input class="form-check-input" type="radio" name="status" id="general">
+                      <label class="form-check-label" for="general">
+                        عام
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="durationSubcribe" id="Annual">
-                      <label class="form-check-label" for="Annual">
-                        سنوي
+                      <input class="form-check-input" type="radio" name="status" id="mintanance">
+                      <label class="form-check-label" for="mintanance">
+                        تحت الصيانة
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="durationSubcribe" id="Semester">
-                      <label class="form-check-label" for="Semester">
-                        ترم
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="durationSubcribe" id="haveSemester">
-                      <label class="form-check-label" for="haveSemester">
-                        نص ترم
+                      <input class="form-check-input" type="radio" name="status" id="stop">
+                      <label class="form-check-label" for="stop">
+                        موقوف
                       </label>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="form-group date_subscribe">
-                    <label for="">من</label>
-                    <input type="date" name="" id="" class="form-control" required>
-                  </div>
-                  <div class="form-group date_subscribe">
-                    <label for="">الى</label>
-                    <input type="date" name="" id="" class="form-control" required>
-                  </div>
+                  <label for="">Version IOS</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="Version IOS" required>
                 </div>
                 <div class="form-group">
-                  <label for="">قيمة الاشتراك</label>
-                  <input type="text" name="" id="" class="form-control" placeholder="ادخل القيمة" required>
+                    <label for="">Version Android</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Version Android" required>
                 </div>
                 <div class="form-group">
-                  <label class="mb-2">حدد الخدمات الإضافية للعقد</label>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="app1">
-                    <label class="form-check-label" for="app1">
-                      الحصول على تطبيق ولى الامر
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="app2">
-                    <label class="form-check-label" for="app2">
-                      اتاحة خدمات الشات والرسائل بين الطلبه والنظام واولياء الامور
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="app3">
-                    <label class="form-check-label" for="app3">
-                      اتاحة الفيديوهات المسجلة لكل المواد
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="app4">
-                    <label class="form-check-label" for="app4">
-                      توفير نسخى لديسكتوب ماك وويندور
-                    </label>
-                  </div>
+                    <label for="">Version Huawei</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Version Huawei" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool ios Old Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldIos" id="yesOldIos">
+                        <label class="form-check-label" for="yesOldIos">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldIos" id="noOldIos">
+                        <label class="form-check-label" for="noOldIos">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool ios New Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewIos" id="yesNewIos">
+                        <label class="form-check-label" for="yesNewIos">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewIos" id="noNewIos">
+                        <label class="form-check-label" for="noNewIos">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool android Old Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldAndroid" id="yesOldAndroid">
+                        <label class="form-check-label" for="yesAndroidIos">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldAndroid" id="noOldAndroid">
+                        <label class="form-check-label" for="noAndroidIos">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool android New Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewAndroid" id="yesNewAndroid">
+                        <label class="form-check-label" for="yesNewAndroid">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewAndroid" id="noNewAndroid">
+                        <label class="form-check-label" for="noNewAndroid">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool huawei Old Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldHuawei" id="yesOldHuawei">
+                        <label class="form-check-label" for="yesOldHuawei">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusOldHuawei" id="noOldHuawei">
+                        <label class="form-check-label" for="noOldHuawei">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Final bool huawei New Status</label>
+                    <div class="duration">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewHuawei" id="yesNewHuawei">
+                        <label class="form-check-label" for="yesNewHuawei">
+                            yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="statusNewHuawei" id="noNewHuawei">
+                        <label class="form-check-label" for="noNewHuawei">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">لينك التحميل للاندرويد</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل اللينك" required>
+                </div>
+                <div class="form-group">
+                    <label for="">لينك التحميل للهواواى</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل اللينك" required>
+                </div>
+                <div class="form-group">
+                    <label for="">لينك التحميل IOS</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل اللينك" required>
+                </div>
+                <div class="form-group">
+                    <label for="">لينك التحميل ماك ديسكتوب</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل اللينك" required>
+                </div>
+                <div class="form-group">
+                    <label for="">لينك التحميل ويندوز ديسكتوب </label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل اللينك" required>
                 </div>
               </div>
               <button type="submit" class="btn PrimaryButton">حفظ</button>
